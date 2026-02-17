@@ -29,15 +29,15 @@ button {
 }
 
 .title {
-  font-family: var(--font-title);
+  font-family: var(--font-common);
   font-size: 22px;
 }
 
 .glow {
-  transition: filter 0.3s, text-shadow 0.3s;
+  transition: filter 0.5s, text-shadow 0.5s;
 }
 
 .glow:hover {
-  filter: drop-shadow(0 0 8px var(--color-glow));
-  text-shadow: 0 0 8px var(--color-glow);
+  filter: drop-shadow(0 0 15px var(--color-glow)) drop-shadow(0 0 30px var(--color-glow));
+  text-shadow: 0 0 15px var(--color-glow), 0 0 30px var(--color-glow);
 }

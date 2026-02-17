@@ -4,7 +4,7 @@
   align-items: center;
 }
 
-.logo__box {
+.logo-box {
   width: 150px;
   height: 105px;
   display: flex;
@@ -13,7 +13,7 @@
   justify-content: center;
 }
 
-.logo__image {
+.logo-image {
   width: 100%;
   height: auto;
   object-fit: contain;

@@ -9,6 +9,10 @@ interface ProductData {
   stock: number;
   image_url: string;
   category: string;
+  description: string;
+  characteristics: string[];
+  materials: string[];
+  measures: { values: number[]; unit: 'cm' | 'inches' };
 }
 
 interface ProductListProps {

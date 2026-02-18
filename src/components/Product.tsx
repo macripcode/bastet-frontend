@@ -1,9 +1,11 @@
 import '../styles/Product/Product.css';
 
-interface Measures {
-  values: number[];
-  unit: 'cm' | 'inches';
-}
+type Measures = {
+  width_cm: number;
+  height_cm: number;
+  depth_cm: number;
+  weight_kg?: number;
+};
 
 interface ProductProps {
   id: number;
@@ -19,7 +21,7 @@ interface ProductProps {
 }
 
 function Product({ id, name, price, stock, image_url, category, description, characteristics, materials, measures }: ProductProps) {
-  const measuresDisplay = `${measures.values.join(' x ')} ${measures.unit}`;
+  const measuresDisplay = `${measures.width_cm} x ${measures.height_cm} x ${measures.depth_cm} cm${measures.weight_kg ? ` · ${measures.weight_kg} kg` : ''}`;
 
   return (
     <div className="product" key={id}>

@@ -12,7 +12,7 @@ interface ProductData {
   description: string;
   characteristics: string[];
   materials: string[];
-  measures: { values: number[]; unit: 'cm' | 'inches' };
+  measures: { width_cm: number; height_cm: number; depth_cm: number; weight_kg?: number };
 }
 
 interface ProductListProps {

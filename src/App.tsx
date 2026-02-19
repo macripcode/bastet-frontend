@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar'
 import Slider from './components/Slider'
+import AboutUs from './components/AboutUs'
 import ProductList from './components/ProductList'
 import './App.css'
 
@@ -66,6 +67,7 @@ function App() {
       <Navbar />
       <Slider slides={slides} />
       <ProductList products={products} itemsPerPage={8} />
+      <AboutUs />
     </>
   )
 }
